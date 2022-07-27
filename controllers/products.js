@@ -16,8 +16,10 @@ router.get('/seed', (req,res) => {
 
 // INDEX
 router.get('/applePieCafe', (req,res) => {
-    
-})
+    Product.find({}, (error, allProducts) => {
+        res.render('applePieCafe/index.ejs', {allProducts}) //images in assets were not able to be rendered, had to upload to a host site
+    });    
+});
 
 // export router so that we can requite it in server.js
 module.exports = router;

@@ -36,7 +36,7 @@ app.use(methodOverride('_method'));
 app.use(morgan('dev'));
 
 // Mount route
-app.get('/', req,res => {
+app.get('/', (req,res) => {
     res.send('what up');
 });
 
