@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const morgan = require('morgan');
 const exp = require('constants');
 require('dotenv').config();
+const productsRouter = require('./controllers/products');
 
 // initialize app
 const app = express();
@@ -33,6 +34,13 @@ app.use(express.urlencoded({extended: false})); // body-parser
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(morgan('dev'));
+
+// Mount route
+app.get('/', req,res => {
+    res.send('what up');
+});
+
+app.use('/', productsRouter);
 
 /* =============== LISTENER =============== */
 app.listen(PORT, () => {
