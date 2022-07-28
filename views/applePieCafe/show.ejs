@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Apple Pie Café</title>
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="main navigation">
+            <div>
+                <a href ="/applePieCafe">
+                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                </a>
+                <h1>EL APPLE PIE CAFÉ</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/applePieCafe/menu">Menú</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Horario y Ubicación</a></li>
+                    <li><a href ="#">Contacto</a></li>
+                </ul>         
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+           <h1><%=product.name%></h1>
+           <img src="<%=product.img%>" alt="product image">
+           <ul>
+                <li><%=product.description%></li>
+                <li><%=product.category%></li>
+                <li><%=product.price%></li>
+                <li><%=product.qty%></li>
+           </ul>
+        </div>
+        <form action="/applePieCafe/menu/<%=product._id%>/edit">
+            <button type="submit">Editar Producto</button>
+        </form>
+    </main>
+</body>
+</html>

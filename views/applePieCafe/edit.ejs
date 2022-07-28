@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Apple Pie Café</title>
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="main navigation">
+            <div>
+                <a href ="/applePieCafe">
+                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                </a>
+                <h1>EL APPLE PIE CAFÉ</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/applePieCafe/menu">Menú</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Horario y Ubicación</a></li>
+                    <li><a href ="#">Contacto</a></li>
+                </ul>         
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+           <h1>Editar Producto</h1>
+           <form action="/applePieCafe/menu/<%=product._id%>?_method=PUT" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" value="<%=product.name%>">
+                <label for="description">Descripción:</label>
+                <input type="textarea" name="description" value="<%=product.description%>">
+                <label for="category">Categoría:</label>
+                <input type="text" name="category" value="<%=product.category%>">
+                <label for="img">Imagen (URL):</label>
+                <input type="text" name="img" value="<%=product.img%>">
+                <label for="price">Precio:</label>
+                <input type="number" name="price" value="<%=product.price%>">
+                <label for="qty">Cantidad:</label>
+                <input type="number" name="qty" value="<%=product.qty%>">
+                <input type="submit" value="Actualizar producto">
+           </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -39,5 +39,26 @@ router.delete('/applePieCafe/menu/:id', (req,res) => {
     });
 });
 
+// UPDATE
+router.put('/applePieCafe/menu/:id', (req,res) => {
+    Product.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updatedProduct) => {
+        res.redirect(`/applePieCafe/menu/${req.params.id}`)
+    });
+});
+
+// EDIT
+router.get('/applePieCafe/menu/:id/edit', (req, res) => {
+    Product.findById(req.params.id, (error, product) => {
+        res.render('applePieCafe/edit.ejs', {product})
+    });
+});
+
+// SHOW
+router.get('/applePieCafe/menu/:id', (req,res) => {
+    Product.findById(req.params.id, (error, product) => {
+        res.render('applePieCafe/show.ejs', {product});
+    });
+});
+
 // export router so that we can requite it in server.js
 module.exports = router;
