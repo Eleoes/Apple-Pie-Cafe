@@ -46,6 +46,13 @@ router.put('/applePieCafe/menu/:id', (req,res) => {
     });
 });
 
+// CREATE
+router.post('/applePieCafe/menu', (req,res) => {
+    Product.create(req.body, (error, newProduct) => {
+        res.redirect('/applePieCafe/menu')
+    });
+});
+
 // EDIT
 router.get('/applePieCafe/menu/:id/edit', (req, res) => {
     Product.findById(req.params.id, (error, product) => {

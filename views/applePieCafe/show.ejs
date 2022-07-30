@@ -40,6 +40,9 @@
         <form action="/applePieCafe/menu/<%=product._id%>/edit">
             <button type="submit">Editar Producto</button>
         </form>
+        <form action="/applePieCafe/menu/<%= product._id %>?_method=DELETE" method="POST">
+            <button type="submit">Borrar Producto</button>
+        </form>
     </main>
 </body>
 </html>
