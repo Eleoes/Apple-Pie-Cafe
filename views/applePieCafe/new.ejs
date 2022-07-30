@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Apple Pie Café</title>
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="main navigation">
+            <div>
+                <a href ="/applePieCafe">
+                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                </a>
+                <h1>EL APPLE PIE CAFÉ</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/applePieCafe/menu">Menú</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Horario y Ubicación</a></li>
+                    <li><a href ="#">Contacto</a></li>
+                </ul>         
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+           <h1>Producto Nuevo</h1>
+           <form action="/applePieCafe/menu" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" placeholder="Nombre del producto">
+                <label for="description">Descripción:</label>
+                <input type="textarea" name="description" palceholder="Descripción del producto">
+                <label for="category">Categoría:</label>
+                <input type="text" name="category" placeholder="Categoría del producto: pastel, pay, galleta...">
+                <label for="img">Imagen (URL):</label>
+                <input type="text" name="img" placeholder="URL de la imagen">
+                <label for="price">Precio:</label>
+                <input type="number" name="price" placeholder="60.00">
+                <label for="qty">Cantidad:</label>
+                <input type="number" name="qty" placeholder="15">
+                <input type="submit" value="Crear nuevo producto">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
