@@ -22,7 +22,7 @@ A website for a Bakery in Ensenada, Mexico.
 
 # Getting Started
 
-Click [HERE](url) to enjoy the app!
+Click [HERE](https://apple-pie-cafe.herokuapp.com/applePieCafe) to enjoy the app!
 
 # Future Enhancements
 
