@@ -19,7 +19,7 @@ A website for a Bakery in Ensenada, Mexico.
 
 # Wireframe
 
-![Wireframe image](/public/assets/ApplePieCafe%20Wireframe.png)
+![Wireframe image](/public/css/assets/ApplePieCafe%20Wireframe.png)
 
 # Getting Started
 
