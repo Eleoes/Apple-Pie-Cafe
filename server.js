@@ -37,7 +37,7 @@ app.use(morgan('dev'));
 
 // Mount route
 app.get('/', (req,res) => {
-    res.send('what up');
+    res.redirect('/applePieCafe');
 });
 
 app.use('/', productsRouter);
