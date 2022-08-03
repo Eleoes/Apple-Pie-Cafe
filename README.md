@@ -15,10 +15,11 @@ A website for a Bakery in Ensenada, Mexico.
 - Express
 - MongoDB
 - NodeJS
+- Heroku
 
 # Wireframe
 
-![Wireframe image](/assets/ApplePieCafe%20Wireframe.png)
+![Wireframe image](/public/assets/ApplePieCafe%20Wireframe.png)
 
 # Getting Started
 
@@ -32,4 +33,5 @@ Click [HERE](https://apple-pie-cafe.herokuapp.com/applePieCafe) to enjoy the app
 - Connect Contact Form to Admin email. 
 - Connect to Google Maps. 
 - Convert to React.
+- Media Queries
 
