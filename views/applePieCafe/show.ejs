@@ -9,39 +9,48 @@
 </head>
 <body>
     <header>
-        <nav role="navigation" aria-label="main navigation">
-            <div>
-                <a href ="/applePieCafe">
-                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
-                </a>
-                <h1>EL APPLE PIE CAFÉ</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/applePieCafe/menu">Menú</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Horario y Ubicación</a></li>
-                    <li><a href ="#">Contacto</a></li>
-                </ul>         
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="site-nav" role="navigation" aria-label="main navigation">
+                <div>
+                    <a href ="/applePieCafe">
+                        <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                    </a>
+                    <h1>EL APPLE PIE CAFÉ</h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="/applePieCafe/menu">Menú</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Horario y Ubicación</a></li>
+                        <li><a href ="#">Contacto</a></li>
+                    </ul>         
+                </div>
+                <hr>
+                <div class="site-social">
+                    <ul class="social-accounts">
+                        <li><a href='#'><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <div>
            <h1><%=product.name%></h1>
-           <img src="<%=product.img%>" alt="product image">
-           <ul>
-                <li><%=product.description%></li>
-                <li><%=product.category%></li>
-                <li><%=product.price%></li>
-                <li><%=product.qty%></li>
+           <img class="imgSize" src="<%=product.img%>" alt="product image">
+           <ul class="list">
+                <li><span class="ul-label">Descripción:</span> <%=product.description%></li>
+                <li><span class="ul-label">Categoría: </span> <%=product.category%></li>
+                <li><span class="ul-label">Precio: $</span> <%=product.price%></li>
+                <li><span class="ul-label">Cantidad:</span> <%=product.qty%></li>
            </ul>
         </div>
-        <form action="/applePieCafe/menu/<%=product._id%>/edit">
+        <form class="primary-btn" action="/applePieCafe/menu/<%=product._id%>/edit">
             <button type="submit">Editar Producto</button>
         </form>
-        <form action="/applePieCafe/menu/<%= product._id %>?_method=DELETE" method="POST">
-            <button type="submit">Borrar Producto</button>
+        <form class ="secondary-btn" action="/applePieCafe/menu/<%= product._id %>?_method=DELETE" method="POST">
+            <button class="secondary-btn" type="submit">Borrar Producto</button>
         </form>
     </main>
 </body>

@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Oswald:wght@200;400&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #323232;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #323232;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 16px 31px;
+    text-decoration: none;
+
+}
+button:hover {
+    background-color: #a2a2a2;
+}
+
+ul {
+    list-style: none;
+}
+/* ========== HEADER ========== */
+header {
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 300px;
+}
+
+header .container {
+    padding: 1.5rem;
+    height: 100%;
+}
+header img {
+    max-width: 100%;
+    display: block;
+}
+
+header h1 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+header nav {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 1.5em 0.5em;
+    display: inline-block;
+    color: #323232;
+}
+
+.site-social {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1.875rem;
+    margin-bottom: 0.5em;
+}
+
+.social-accounts {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.social-accounts li {
+    line-height: 26px;
+    margin: 0 2px 0.5em;
+    display: inline-block;
+}
+
+/* ========== MAIN ========== */
+
+main {
+    height: 100%;
+    margin-left: 300px;
+    position: relative;
+    z-index: 0;
+    font-size: 1.5rem;
+}
+
+/* ========== WELCOME PAGE ========== */
+#gallery-grid {
+    margin-top: -24px;
+    margin-bottom: 24px;
+    width: 100%
+}
+
+.gallery-grid_column {
+    float: left;
+    width: 50%
+}
+
+.gallery-grid_column img {
+    padding: 24px 12px 0;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    height: auto;
+}
+
+/* ========== MENU ========== */
+
+.center {
+    left: 45%;
+    position: relative;
+    display: inline-flex;
+    margin: 40px 40px 40px 40px;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+#hero img{
+    max-width: 100%;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, 50%);
+    font-size: 4rem;
+}
+
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.bakery-item {
+    display: flex;
+    position: relative;
+    transition-duration: 100ms;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    margin: 0 20px;
+    height: 300px;
+}
+
+.bakery-item:hover {
+    border:2px solid #e0e0e0;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    color: #323232;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.bakery-item img {
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0 auto;
+    right: 0;
+}
+
+article p {
+    margin: 30px 0;
+    color: grey;
+    letter-spacing: 1.5px;
+}
+.price {
+    position: relative;
+    bottom: 20px;
+    font-size: 2rem;
+}
+
+/* ========== NEW PRODUCT ========== */
+
+.form-container{
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 600px;
+    align-items: center;
+    margin: 40px 40px 40px 40px;
+    font-size: 1.5rem;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.form-container input[type=submit] {
+    background-color: #323232;
+    color: white;
+}
+
+.producto {
+    margin-left: 40px;
+}
+
+.imgSize {
+    display: block;
+    padding: 30px;
+    left: 0;
+    width: 25%;
+}
+
+.ul-label {
+    font-weight: bold; 
+    list-style: none;
+}
+
+.list li {
+    margin: 20px;
+}
+
+.primary-btn {
+    display: inline;
+    margin: 0 auto;
+}
+.secondary-btn {
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    color: #323232;
+}
+

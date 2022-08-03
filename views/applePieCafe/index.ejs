@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/6b4462a889.js" crossorigin="anonymous"></script>
     <title>Apple Pie Café</title>
 </head>
 <body>
     <header>
-        <nav role="navigation" aria-label="main navigation">
-            <div>
-                <a href ="/applePieCafe">
-                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
-                </a>
-                <h1>EL APPLE PIE CAFÉ</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/applePieCafe/menu">Menú</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Horario y Ubicación</a></li>
-                    <li><a href ="#">Contacto</a></li>
-                </ul>         
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="site-nav" role="navigation" aria-label="main navigation">
+                <div>
+                    <a href ="/applePieCafe">
+                        <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                    </a>
+                    <h1>EL APPLE PIE CAFÉ</h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="/applePieCafe/menu">Menú</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Horario y Ubicación</a></li>
+                        <li><a href ="#">Contacto</a></li>
+                    </ul>         
+                </div>
+                <hr>
+                <div class="site-social">
+                    <ul class="social-accounts">
+                        <li><a href='#'><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <div>
-            <img src="https://i.ibb.co/BNNDpYr/Store-Front.png">
-            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.stockland.com.au%2F~%2Fmedia%2Fshopping-centre%2Fcommon%2Fstockland-baringa%2Fstores%2Fsg-bakery%2Fbakery-1920x1080.jpg&f=1&nofb=1">
+        <div id = "gallery-grid">
+            <div class = "gallery-grid_column">
+                <img src="https://i.ibb.co/BNNDpYr/Store-Front.png">
+            </div>
+            <div class = "gallery-grid_column">
+                <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.stockland.com.au%2F~%2Fmedia%2Fshopping-centre%2Fcommon%2Fstockland-baringa%2Fstores%2Fsg-bakery%2Fbakery-1920x1080.jpg&f=1&nofb=1">
             <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdd%2Fcb%2F98%2Fddcb987938c90e1b485e6c72f7a4ffed.jpg&f=1&nofb=1">
+            </div>
         </div>
     </main>
 </body>

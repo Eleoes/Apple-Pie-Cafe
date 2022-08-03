@@ -9,41 +9,50 @@
 </head>
 <body>
     <header>
-        <nav role="navigation" aria-label="main navigation">
-            <div>
-                <a href ="/applePieCafe">
-                    <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
-                </a>
-                <h1>EL APPLE PIE CAFÉ</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/applePieCafe/menu">Menú</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Horario y Ubicación</a></li>
-                    <li><a href ="#">Contacto</a></li>
-                </ul>         
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="site-nav" role="navigation" aria-label="main navigation">
+                <div>
+                    <a href ="/applePieCafe">
+                        <img src="https://i.ibb.co/bQ9kB6b/logo.png" alt="logo">
+                    </a>
+                    <h1>EL APPLE PIE CAFÉ</h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="/applePieCafe/menu">Menú</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Horario y Ubicación</a></li>
+                        <li><a href ="#">Contacto</a></li>
+                    </ul>         
+                </div>
+                <hr>
+                <div class="site-social">
+                    <ul class="social-accounts">
+                        <li><a href='#'><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <div>
-            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flartoffashion.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fgateaubakery11.jpg&f=1&nofb=1">
-            <h1>MENU</h1>
-        </div>
-        <form action="/applePieCafe/menu/new">
+        <section id="hero">
+            <h1>Menú</h1>
+            <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flartoffashion.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fgateaubakery11.jpg&f=1&nofb=1" alt="pastries image">
+        </section>        
+        <form class="center" action="/applePieCafe/menu/new">
             <button type="submit">Producto Nuevo</button>
         </form>
-        <div>
+        <div class = "menu">
             <% allProducts.forEach(product => { %>
-                <div>
-                    <a href = "/applePieCafe/menu/<%= product._id%>">
-                        <img src="<%= product.img%>" alt="product image">
-                        <article>
+                <div class="bakery-item">
+                    <a class="column" href = "/applePieCafe/menu/<%= product._id%>">
+                        <article class="column left">
                             <h2><%= product.name %></h2>
                             <p><%= product.description %></p>
-                            <h3>$<%= product.price %></h3>
+                            <h3 class="price">$<%= product.price %></h3>
                         </article>
+                        <img class ="column right"src="<%= product.img%>" alt="product image">
                     </a>
                 </div>
             <% }) %>
