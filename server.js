@@ -11,7 +11,7 @@ const productsRouter = require('./controllers/products');
 const app = express();
 
 /* =============== CONFIGURATION =============== */
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || "4000";
 const MONGO_URL = process.env.MONGO_URL;
 mongoose.connect(MONGO_URL);
 const db = mongoose.connection;
